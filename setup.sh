@@ -31,29 +31,42 @@ HIDDEN_FOLDER="$HOME/.config"
 ZIP_FILE="nvchad.zip"  
 
 if [ -f "$ZIP_FILE" ]; then
-    echo "Unzipping $ZIP_FILE into $HOME"
-    unzip "$ZIP_FILE" -d "$HOME"
+    if [ -f "$HOME/.config"]; then
+	echo "already unzipped"
+    else
+	echo "Unzipping $ZIP_FILE into $HOME"
+        unzip "$ZIP_FILE" -d "$HOME"
+    fi
 else
     echo "Zip file $ZIP_FILE not found!"
 fi
 
-if [ -f "$HOMW/termux-setup.zip" ]; then
+if [ -f "$HOME/termux-setup.zip" ]; then
    echo "termux-setup.zip found"
-   rm -rf ../ termux-setup.zip
+   
 else
    echo "System skiping to unzip termux-setup.zip as not found"
 fi
 
-
-#pkg update -y
-#pkg upgrade -y
-#pkg install root-repo -y
-#pkg install x11-repo -y
-#pkg install tur-repo -y
-#pkg install tree -y
-#pkg install python -y
-#pkg install nodejs -y
-#pkg install clang -y
-#pip install colorama selenium flask flask-sockecio -y
+rm -rf $HOME/.termux
+cp -r .termux $HOME
 
 
+pkg update -y
+pkg upgrade -y
+pkg install root-repo -y
+pkg install x11-repo -y
+pkg install tur-repo -y
+pkg install git -y
+pkg install neovim -y
+pkg install tree -y
+pkg install python -y
+pkg install nodejs -y
+pkg install clang -y
+pip install colorama selenium flask flask-sockecio -y
+pkg i python-pandas -y
+pkg i python-lxml -y
+pkg i cromium -y
+
+
+nvim .
