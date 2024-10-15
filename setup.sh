@@ -29,6 +29,15 @@ clear
 
 rm -rf termux-setup.zip
 
+unzip nvchad.zip
+
+rm -rf nvchad.zip
+
+cd
+
+mkdir .config
+
+cp .config/nvim .config/
 
 
 #pkg update -y
@@ -37,5 +46,9 @@ rm -rf termux-setup.zip
 #pkg install x11-repo -y
 #pkg install tur-repo -y
 #pkg install tree -y
+#pkg install python -y
+#pkg install nodejs -y
+#pkg install clang -y
+#pip install colorama selenium flask flask-sockecio -y
 
 
