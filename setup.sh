@@ -63,12 +63,13 @@ pkg install tree -y
 pkg install python -y
 pkg install nodejs -y
 pkg install clang -y
-pip install colorama selenium flask flask-sockecio -y
 pkg i python-pandas -y
 pkg i python-lxml -y
-pkg i cromium -y
+pkg i chromium -y
+pkg install zip
+pip install colorama selenium flask flask-sockecio
 
 cd ~
-
+apt autoremove
 
 nvim .
