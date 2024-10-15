@@ -37,9 +37,9 @@ else
     echo "Zip file $ZIP_FILE not found!"
 fi
 
-if [ -f "termux-setup.zip" ]; then
+if [ -f "$HOMW/termux-setup.zip" ]; then
    echo "termux-setup.zip found"
-   rm -rf termux-setup.zip
+   rm -rf ../ termux-setup.zip
 else
    echo "System skiping to unzip termux-setup.zip as not found"
 fi
