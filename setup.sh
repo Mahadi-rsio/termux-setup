@@ -27,17 +27,22 @@ echo "[INFO] System ready for installation"
 
 clear
 
-rm -rf termux-setup.zip
+HIDDEN_FOLDER="$HOME/.config"
+ZIP_FILE="nvchad.zip"  
 
-unzip nvchad.zip
+if [ -f "$ZIP_FILE" ]; then
+    echo "Unzipping $ZIP_FILE into $HOME"
+    unzip "$ZIP_FILE" -d "$HOME"
+else
+    echo "Zip file $ZIP_FILE not found!"
+fi
 
-rm -rf nvchad.zip
-
-cd
-
-mkdir .config
-
-cp .config/nvim .config/
+if [ -f "termux-setup.zip" ]; then
+   echo "termux-setup.zip found"
+   rm -rf termux-setup.zip
+else
+   echo "System skiping to unzip termux-setup.zip as not found"
+fi
 
 
 #pkg update -y
