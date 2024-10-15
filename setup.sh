@@ -68,5 +68,7 @@ pkg i python-pandas -y
 pkg i python-lxml -y
 pkg i cromium -y
 
+cd ~
+
 
 nvim .
