@@ -1,5 +1,5 @@
 
-echo "Mahadi @RSIO v.0.1"
+echo "Mahadi @RSIO v.0.2"
 
 sleep 0.5
 
@@ -7,23 +7,11 @@ echo "[Git] Github: https://www.github.com/Mahadi-rsio"
 
 sleep 0.5
 
-echo "[WARN] This Project is for personal uses only"
-
-sleep 0.5
-
-echo "[WARN] Some issue will found while using"
-
-sleep 0.5
-
-echo "[WARN] Some functionality may not works properly "
-
-sleep 0.5
-
 echo "[INFO] Checking System"
 
 sleep 0.5
 
-echo "[INFO] System ready for installation"
+echo "[INFO] System installation started"
 
 clear
 
@@ -62,10 +50,10 @@ pkg install neovim -y
 pkg install tree -y
 pkg install python -y
 pkg install nodejs -y
-pkg install clang -y
+
 pkg i python-pandas -y
 pkg i python-lxml -y
-pkg i chromium -y
+
 pkg install zip
 pip install colorama selenium flask
 
