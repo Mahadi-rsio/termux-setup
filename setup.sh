@@ -67,7 +67,7 @@ pkg i python-pandas -y
 pkg i python-lxml -y
 pkg i chromium -y
 pkg install zip
-pip install colorama selenium flask flask-sockecio
+pip install colorama selenium flask
 
 cd ~
 apt autoremove
