@@ -55,8 +55,8 @@ pkg install nodejs -y
 pkg i python-pandas -y
 pkg i python-lxml -y
 
-pkg install zip -y
-pip install colorama selenium flask
+#pkg install zip -y
+#pip install colorama selenium flask
 
 cd ~
 apt autoremove
