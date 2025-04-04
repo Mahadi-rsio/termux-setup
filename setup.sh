@@ -48,12 +48,12 @@ pkg install tur-repo -y
 pkg install git -y
 pkg install neovim -y
 pkg install tree -y
-pkg install python -y
+#pkg install python -y
 pkg install clang -y
 pkg install nodejs -y
 
-pkg i python-pandas -y
-pkg i python-lxml -y
+#pkg i python-pandas -y
+#pkg i python-lxml -y
 
 #pkg install zip -y
 #pip install colorama selenium flask
