@@ -40,17 +40,13 @@ rm -rf $HOME/.termux
 cp -r .termux $HOME
 
 
-pkg update -y
-pkg upgrade -y
-pkg install root-repo -y
-pkg install x11-repo -y
-pkg install tur-repo -y
-pkg install git -y
-pkg install neovim -y
-pkg install tree -y
+
+apt install git -y
+apt install neovim -y
+apt install tree -y
 #pkg install python -y
-pkg install clang -y
-pkg install nodejs -y
+apt install clang -y
+apt install nodejs -y
 
 #pkg i python-pandas -y
 #pkg i python-lxml -y
