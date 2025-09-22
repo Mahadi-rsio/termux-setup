@@ -41,12 +41,12 @@ cp -r .termux $HOME
 
 
 
-#apt install git -y
-#apt install neovim -y
+apt install git -y
+apt install neovim -y
 #apt install tree -y
 #pkg install python -y
 #apt install clang -y
-#apt install nodejs -y
+apt install nodejs -y
 
 #pkg i python-pandas -y
 #pkg i python-lxml -y
@@ -54,7 +54,7 @@ cp -r .termux $HOME
 #pkg install zip -y
 #pip install colorama selenium flask
 
-#cd ~
-#apt autoremove
+cd ~
+apt autoremove
 
-#nvim .
+nvim .
