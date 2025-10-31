@@ -41,12 +41,12 @@ cp -r .termux $HOME
 
 
 
-#apt install git -y
-#apt install neovim -y
-#apt install tree -y
+apt install git -y
+apt install neovim -y
+apt install tree -y
 #pkg install python -y
-#apt install clang -y
-#apt install nodejs -y
+apt install clang -y
+apt install nodejs -y
 
 #pkg i python-pandas -y
 #pkg i python-lxml -y
