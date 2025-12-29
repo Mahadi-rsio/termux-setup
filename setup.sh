@@ -39,20 +39,13 @@ fi
 rm -rf $HOME/.termux
 cp -r .termux $HOME
 
-
-
 apt install git -y
 apt install neovim -y
 apt install tree -y
-#pkg install python -y
 apt install clang -y
 apt install nodejs -y
 
-#pkg i python-pandas -y
-#pkg i python-lxml -y
-
-#pkg install zip -y
-#pip install colorama selenium flask
+touch .hushlogin
 
 cd ~
 apk autoremove
